@@ -3,7 +3,7 @@
     <input
       type="text"
       :value="value"
-      class="border-2 border-gray-400 px-3 py-1 rounded-md min-h-[40px]"
+      class="border-2 border-gray-400 px-3 py-1 rounded-md min-h-[40px] w-full"
       @input="$emit('event:update', $event.target.value)"
     />
   </div>

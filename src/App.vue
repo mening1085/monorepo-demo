@@ -7,11 +7,15 @@ const msg = ref("Hello Vue 3 + Vite");
 
 <template>
   <div>
-    <h1 class="text-3xl font-bold underline mb-12">Hello Monorepo!</h1>
-    <text-input :value="msg" @event:update="msg = $event" />
-
-    <div class="mt-12">
-      {{ msg }}
+    <div
+      class="p-12 border shadow-md rounded-2xl text-start min-w-[500px] flex justify-center flex-col"
+    >
+      <div class="mb-6">
+        <div>Username</div>
+        <text-input :value="msg" @event:update="msg = $event" />
+      </div>
+      <div>Password</div>
+      <text-input :value="msg" @event:update="msg = $event" />
     </div>
   </div>
 </template>
