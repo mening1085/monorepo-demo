@@ -1,17 +1,19 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import { ref } from "vue";
+import TextInput from "./components/TextInput.vue";
+
+const msg = ref("Hello Vue 3 + Vite");
 </script>
 
 <template>
   <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+    <h1 class="text-3xl font-bold underline mb-12">Hello Monorepo!</h1>
+    <text-input :value="msg" @event:update="msg = $event" />
+
+    <div class="mt-12">
+      {{ msg }}
+    </div>
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
 <style scoped>
