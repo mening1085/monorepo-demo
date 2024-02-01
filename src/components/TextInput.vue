@@ -4,7 +4,7 @@
     <input
       type="text"
       :value="value"
-      class="border-2 border-gray-400 px-3 py-1 rounded-md min-h-[40px] w-full bg-blue-500"
+      class="text__input"
       @input="$emit('event:update', $event.target.value)"
     />
   </div>
