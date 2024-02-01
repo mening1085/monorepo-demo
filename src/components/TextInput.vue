@@ -1,5 +1,6 @@
 <template>
   <div>
+    value : {{ value }}
     <input
       type="text"
       :value="value"
