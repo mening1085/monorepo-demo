@@ -28,7 +28,7 @@ const props = defineProps({
   font-size: 1rem;
   line-height: 1.5rem;
   color: #111827;
-  background-color: #c71515;
+  background-color: #04f500;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 </style>
